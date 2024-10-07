@@ -83,6 +83,10 @@ Fluid.events = {
     if (board.length === 0) {
       return;
     }
+    var arrowUpIcon = jQuery('#scroll-top-button i');
+    if(arrowUpIcon.length === 0){
+      return;
+    } 
     var posDisplay = false;
     var scrollDisplay = false;
     // Position
@@ -109,7 +113,7 @@ Fluid.events = {
       var scrollHeight = document.body.scrollTop + document.documentElement.scrollTop;
       scrollDisplay = scrollHeight >= headerHeight;
       topArrow.css({
-        'bottom': posDisplay && scrollDisplay ? '20px' : '-60px'
+        'bottom': scrollDisplay ? '20px' : '-60px'
       });
     });
     // Click
