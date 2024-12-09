@@ -34,7 +34,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://nhwite.cn/img/Mypoem1.jpg">
 <meta property="article:published_time" content="2024-12-08T17:40:00.000Z">
-<meta property="article:modified_time" content="2024-12-09T09:46:44.771Z">
+<meta property="article:modified_time" content="2024-12-09T09:54:33.494Z">
 <meta property="article:author" content="Kingmeesh">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://nhwite.cn/img/Mypoem1.jpg">
@@ -249,7 +249,7 @@ rel="stylesheet">
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          240 字
+          259 字
         
       </span>
     
@@ -306,11 +306,19 @@ rel="stylesheet">
 <p>当我试图从回望的脚步中去回念。<br>以后来者的视角向世界索求缘由<br>世界却始终沉默，弃我于隔雾观花。<br>可叹爱恨纠葛如人饮水，冷暖自知</p>
 <p>我在冷静回望中宣读严厉的判决<br>用镣铐把我和路灯困在寒冷雪夜。<br>我欲暖冷铁，冷铁却欲将我抽离。</p>
 <p>我在宏伟叙事中造就爱的自恋者。<br>无有冬天需要逾越，日出或日隐。<br>春日重又会在噼啪声中将我唤醒。</p>
+<hr>
 <div id="music-player"></div>
 <script>
     if (/Android|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        document.getElementById("music-player").innerHTML = 
-            '<p style="text-align: center;">移动端访问完整功能，请在浏览器设置中将UA改为电脑端</p>';
+        document.getElementById("music-player").innerHTML = `
+            <div style="border: 2px dashed #ff6f61; border-radius: 10px; padding: 10px; display: inline-block; background: #fff5f5; color: #d9534f;">
+                <p style="font-size: 16px; line-height: 1.6;">
+                    当前设备暂不支持嵌入音乐播放器。<br>
+                    为完整体验，请在浏览器设置中将 <strong>UA</strong> 改为电脑端模式。
+                </p>
+                <p style="font-size: 14px;">谢谢您的理解 ❤️</p>
+            </div>
+        `;
     } else {
         document.getElementById("music-player").innerHTML = 
             '<center><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1843868567&auto=1&height=66"></iframe></center>';
